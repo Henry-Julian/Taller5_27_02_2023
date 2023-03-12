@@ -1,6 +1,6 @@
 export default {
-    num1: document.querySelector("#cat1"),
-    num2: document.querySelector("#cat2"),
+    num1: document.querySelector("#radio"),
+    num2: document.querySelector("#altura"),
     data() {
         return [
             Number(this.num1.value),

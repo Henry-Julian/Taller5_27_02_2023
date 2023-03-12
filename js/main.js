@@ -1,13 +1,13 @@
-import lados from './lados.js';
+import datos from './datos.js';
 export default {
     btn: document.querySelector("#boton"),
     click() {
         this.btn.addEventListener("click", (event) =>{
-            this.calcular(...lados.data());
+            this.calcular(...datos.data());
         })
     },
-    calcular(c1,c2) {
+    calcular(r,h) {
         
-        alert(`La Hipotenusa del triángulo dados los catetos ${c1} y ${c2} es: ${Math.hypot(c1,c2)}`);
+        alert(`El área lateral del cilindro con Radio ${r} y con altura ${h} es:  ${2 * Math.PI * r * h} y su volumen es:  ${Math.PI * Math.pow(r,2) * h}`);
     }
 }

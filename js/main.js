@@ -6,8 +6,14 @@ export default {
             this.calcular(...datos.data());
         })
     },
-    calcular(r,h) {
-        
-        alert(`El área lateral del cilindro con Radio ${r} y con altura ${h} es:  ${2 * Math.PI * r * h} y su volumen es:  ${Math.PI * Math.pow(r,2) * h}`);
+    calcular(n1,n2) {
+        if (n1==n2) {
+            alert(`El número ${n1} es igual al número ${n2}`);
+        } else if (n1>n2) {
+            alert(`Los números ordenados de menor a mayor son: ${n2}, ${n1}`)
+        } else {
+            alert(`Los números ordenados de menor a mayor son: ${n1}, ${n2}`);
+        }
     }
 }
+
